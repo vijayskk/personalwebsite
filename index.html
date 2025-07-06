@@ -29,6 +29,26 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    const options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+      mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: false, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+    }
+    new Darkmode(options).showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
 
 <body class="index-page">
 
@@ -85,7 +105,7 @@
           </div>
           <div class="col-lg-6">
             <div class="hero-image">
-              <img src="assets/img/profile/banner.png" alt="Vijay Satheesh" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/profile/banner.png" alt="Vijay Satheesh" class="img-fluid darkmode-ignore" data-aos="zoom-out" data-aos-delay="300">
               <div class="shape-1"></div>
               <div class="shape-2"></div>
             </div>
@@ -110,7 +130,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/profile/me.jpg" alt="Vijay Satheesh" class="img-fluid rounded-4">
+              <img src="assets/img/profile/me.jpg" alt="Vijay Satheesh" class="img-fluid rounded-4 darkmode-ignore">
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
